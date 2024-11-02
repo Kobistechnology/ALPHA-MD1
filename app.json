@@ -1,6 +1,6 @@
 {
-  "name": "ALPHA-MD",
-  "description": "This BOT was developed by keithkeizzah.",
+  "name": "pepper-soup",
+  "description": "This BOT was developed by pepper soup girl.",
   "keywords": [
     "bot",
     "node",
@@ -20,11 +20,11 @@
     "AUTO_READ_STATUS": {
       "description": "Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value": "yes",
-      "required": false
+      "required": true
     },
     "AUTO_READ_MESSAGES": {
       "description": "Turn this 'on' if you want the bot to automatically read incoming messages. Use 'off' to disable it.",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "BLOCK_ALL": {
@@ -34,7 +34,7 @@
     },
     "AUTO_DOWNLOAD_STATUS": {
       "description": "Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
-      "value": "no",
+      "value": "yes",
       "required": false
     },
     "PM_PERMIT": {
@@ -44,17 +44,17 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "ALPHA-MD",
-      "required": false
+      "value": "pepper-soup",
+      "required": true
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"",
-      "required": false
+      "value":"https://whatsapp.com/channel/0029Vabb7YwFSAt31QUidn1k",
+      "required": true
     },
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
-      "value": "yes",
+      "value": "false",
       "required": false 
     },
     "HEROKU_APY_KEY": {
@@ -69,18 +69,18 @@
     },
     "SESSION_ID": {
       "description": "put your session ID , the code you receive after scanning Qr code",
-      "value": "",
+      "value": "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoicUNRa04yOWRVcGREQlNMRGE3QUlnVllBeHl5UnBKeEsyNFVaS2dlRFVVcz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoibEpUTGNzS1RyenR2cUNET2FYcjNKK1g1bTBxYXF6L1l3UmFhMDRmQlFHOD0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI0S1hPcnRRWCtLSnVFMTV2ZUd0ZWQ4V1F3UHFEWXY3dFpYcnhXY2xxODBNPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJmbkYwMTJJWmw5TE00bkdRb2xxRzJlVWpNTnoyQ1dlMkJleGZxWDU1eVVjPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IklMR1JSenFMQVo2UjlLMG5STjk2RHpvK2t4dTh4M1I5d2RhVDlrV2NtMlE9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ikx4TFB3SE9oVUQxODg5NjhISHE3Y2pSV2U0c25Dei9RbUJVbC9SM1c5a009In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiR05oc0I0VTF6ang2YU0xU3pLc0I3VmFyZy81bWRjbU54Y2F4cEZYRXFGST0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoicjc0TlRTV0RGT0kvaWZRQmNROGdINkk4TE1nSnNibU5NZ09ZSnJMSnFubz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjRGd1VOTzhZS3Mwa0ZJWlhac2Q5L1cwdWV0TnpRN3lQbTNBVGMwZnh4NnBWbDVFU2JJVDVHRHdhWFJzOHVDMy9MZHFTemhHbUUwVEFUMEFjN2JNRkF3PT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6NzMsImFkdlNlY3JldEtleSI6ImJ0SzQwWHE1eFVMR0NZNmhrOFJpSVg0WVRmV0ttUXNYV25aNGNwbFRHd1E9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6IklIcmQ3VldMUzlpMTFkcUt6QTBpZXciLCJwaG9uZUlkIjoiYzYwYWYwMTItMWYwMi00ODA4LWI4YzUtZGVmZDU3ZmE2YzUzIiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImUvQnB4MUo0dmFDQWlkcFFLT1BpeHBRWm1obz0ifSwicmVnaXN0ZXJlZCI6dHJ1ZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJmbWVDaXRQL3ZabFpwY1dETzR5N3F3MmtOUEU9In0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiOEs4QjZMVk0iLCJtZSI6eyJpZCI6IjIzNDkwMjY2Nzg3NTE6NEBzLndoYXRzYXBwLm5ldCIsIm5hbWUiOiJLb2JpcyJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDS213cnNzRUVPYXRtcmtHR0FJZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiUWdzckNHYnZYSlFab3FKbG0xWjdnNmRpazM3M0ltUlRPQ3NzN3J4dnczYz0iLCJhY2NvdW50U2lnbmF0dXJlIjoiY0dUOWRnMU1Bc0tPZE1VVlhSYWw2ZTRsLy85ckU5V2V2MEpaVWpWOXc1NEVrNkdYb2xRMEhrTXZIVEp2SWF1Mmx4dW1rbHM4UUFwQzNOSUY4dVdJQUE9PSIsImRldmljZVNpZ25hdHVyZSI6ImpZemJLenV0a0VJb2FWOU1PaVdPdlJHZWFXc21xMHdBSDhLeFlzWloxcFNEdDIraGJVRXhaOTV4dHo5VU5FKyt1bE1PV1RiekRqYVlEV3liTERtdkF3PT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjM0OTAyNjY3ODc1MTo0QHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlVJTEt3aG03MXlVR2FLaVpadFdlNE9uWXBOKzl5SmtVemdyTE82OGI4TjMifX1dLCJwbGF0Zm9ybSI6InNtYmEiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MzA1ODIyNTksIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBR01jIn0=",
       "required": true
     },
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "keithkeizzah"
+      "value": "pepper soup"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-      "required": false,
-      "value": "254796299159"
+      "required": true,
+      "value": "2349026678751"
     },
     "WARN_COUNT": {
       "desc": "this is the limit of warn for warning commandes",
@@ -99,8 +99,8 @@
     },
     "ANTI_DELETE_MESSAGE": {
       "description": "if you want to enable anti delete message put yes else put no",
-      "value": "no",
-      "required": false
+      "value": "yes",
+      "required": true
     },
     "ANTICALL": {
       "description": "Automatically decline incoming calls. Type 'on' to activate or 'off' to deactivate.",
